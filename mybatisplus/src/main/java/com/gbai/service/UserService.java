@@ -1,5 +1,6 @@
 package com.gbai.service;
 
+import com.baomidou.mybatisplus.plugins.Page;
 import com.gbai.entity.User;
 import com.baomidou.mybatisplus.service.IService;
 
@@ -13,4 +14,8 @@ import com.baomidou.mybatisplus.service.IService;
  */
 public interface UserService extends IService<User> {
 
+
+    Page<User> selectUserPage(Page<User> page, Integer state) ;
+
+    Integer deleteAllUser();
 }
