@@ -8,6 +8,7 @@
       <list>
         <option value="$PROJECT_DIR$/mybatisplus/pom.xml" />
         <option value="$PROJECT_DIR$/security/pom.xml" />
+        <option value="$PROJECT_DIR$/mappertest/pom.xml" />
       </list>
     </option>
   </component>

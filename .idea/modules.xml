@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/mappertest/mappertest.iml" filepath="$PROJECT_DIR$/mappertest/mappertest.iml" />
       <module fileurl="file://$PROJECT_DIR$/mybatisplus/mybatisplustest.iml" filepath="$PROJECT_DIR$/mybatisplus/mybatisplustest.iml" />
       <module fileurl="file://$PROJECT_DIR$/security/security.iml" filepath="$PROJECT_DIR$/security/security.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/study.iml" filepath="$PROJECT_DIR$/.idea/study.iml" />
