@@ -10,6 +10,7 @@
         <module name="mybatisplustest" />
         <module name="oauthtest" />
         <module name="security" />
+        <module name="test" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -17,6 +18,7 @@
       <module name="mybatisplustest" target="1.8" />
       <module name="oauthtest" target="1.8" />
       <module name="security" target="1.8" />
+      <module name="test" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>
