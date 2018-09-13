@@ -7,6 +7,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="mappertest" />
+        <module name="mulidatasource" />
+        <module name="mulimybatisplus" />
         <module name="mybatisplustest" />
         <module name="oauthtest" />
         <module name="security" />
@@ -15,6 +17,8 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="mappertest" target="1.8" />
+      <module name="mulidatasource" target="8" />
+      <module name="mulimybatisplus" target="1.8" />
       <module name="mybatisplustest" target="1.8" />
       <module name="oauthtest" target="1.8" />
       <module name="security" target="1.8" />
