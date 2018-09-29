@@ -14,4 +14,8 @@
         id, username, password
     </sql>
 
+    <select id="getAllUser" resultType="map">
+        select * from user;
+    </select>
+
 </mapper>

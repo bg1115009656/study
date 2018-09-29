@@ -5,6 +5,7 @@ import com.gbai.entity.User;
 import com.baomidou.mybatisplus.mapper.BaseMapper;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * <p>
@@ -31,4 +32,6 @@ public interface UserMapper extends BaseMapper<User> {
      * 自定义注入方法
      */
     int deleteAll();
+
+    List<Map<String,Object>> getAllUser();
 }

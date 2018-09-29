@@ -7,6 +7,12 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/mybatisplus/pom.xml" />
+        <option value="$PROJECT_DIR$/security/pom.xml" />
+        <option value="$PROJECT_DIR$/mappertest/pom.xml" />
+        <option value="$PROJECT_DIR$/oauthtest/pom.xml" />
+        <option value="$PROJECT_DIR$/test/pom.xml" />
+        <option value="$PROJECT_DIR$/muliDataSource/pom.xml" />
+        <option value="$PROJECT_DIR$/mulimybatisplus/pom.xml" />
       </list>
     </option>
   </component>
