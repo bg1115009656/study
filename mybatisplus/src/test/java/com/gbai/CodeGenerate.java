@@ -21,7 +21,7 @@ public class CodeGenerate {
 
     private static String path ="src\\main\\";    //文件路径
     private static String authorName="codeGenerate";     //作者
-    private static String table="user";                  //table名字
+    private static String[] tables = {"emp","emp_auxiliary","emp_contact","emp_work_exp","emp_education_exp","emp_train_exp"};                  //table名字
     private static String prefix="";                     //table前缀
 //    private static File file = new File(packageName);
 //    private static String path = file.getAbsolutePath();
@@ -43,8 +43,8 @@ public class CodeGenerate {
                         .setOpen(false)//生成后打开文件夹
                         .setAuthor(authorName)
                         // 自定义文件命名，注意 %s 会自动填充表实体属性！
-                        .setMapperName("%sMapper")
-                        .setXmlName("%sMapper")
+                        .setMapperName("%sDao")
+                        .setXmlName("%sDao")
                         .setServiceName("%sService")
                         .setServiceImplName("%sServiceImpl")
                         .setControllerName("%sController")
@@ -65,8 +65,8 @@ public class CodeGenerate {
 //                        })
                         .setDriverName("com.mysql.jdbc.Driver")
                         .setUsername("root")
-                        .setPassword("root")
-                        .setUrl("jdbc:mysql://127.0.0.1:3306/test?characterEncoding=utf8")
+                        .setPassword("root123@")
+                        .setUrl("jdbc:mysql://106.75.222.98:3306/dev_ibpo?characterEncoding=utf8&useSSL=false&allowMultiQueries=true")
         ).setStrategy(
                 // 策略配置
                 new StrategyConfig()
@@ -74,7 +74,7 @@ public class CodeGenerate {
                         //.setDbColumnUnderline(true)//全局下划线命名
                         .setTablePrefix(new String[]{prefix})// 此处可以修改为您的表前缀
                         .setNaming(NamingStrategy.underline_to_camel)// 表名生成策略
-                        .setInclude(new String[] { table }) // 需要生成的表
+                        .setInclude(tables) // 需要生成的表
                         .setRestControllerStyle(true)
                         //.setExclude(new String[]{"test"}) // 排除生成的表
                         // 自定义实体父类
@@ -83,7 +83,7 @@ public class CodeGenerate {
                         //.setSuperEntityColumns(new String[]{"test_id"})
                         .setTableFillList(tableFillList)
                         // 自定义 mapper 父类
-                        // .setSuperMapperClass("com.baomidou.demo.TestMapper")
+                         .setSuperMapperClass("com.dianmi.common.tkcore.IMapper")
                         // 自定义 service 父类
                         // .setSuperServiceClass("com.baomidou.demo.TestService")
                         // 自定义 service 实现类父类
@@ -106,7 +106,7 @@ public class CodeGenerate {
                 // 包配置
                 new PackageConfig()
                         //.setModuleName("User")
-                        .setParent("com.gbai")// 自定义包路径
+                        .setParent("com.dianmi.cbas")// 自定义包路径
                         .setController("controller")// 这里是控制器包名，默认 web
                         .setEntity("entity")
                         .setMapper("dao")
@@ -126,7 +126,7 @@ public class CodeGenerate {
                     // 自定义输出文件目录
                     @Override
                     public String outputFile(TableInfo tableInfo) {
-                        return path+"\\resources\\mapper\\" + tableInfo.getEntityName() + "Mapper.xml";
+                        return path+"\\resources\\mapper\\" + tableInfo.getEntityName() + "Dao.xml";
                     }
                 }))
         ).setTemplate(

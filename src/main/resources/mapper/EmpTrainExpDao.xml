@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dianmi.cbas.dao.EmpTrainExpDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.dianmi.cbas.entity.EmpTrainExp">
+        <id column="id" property="id" />
+        <result column="emp_id" property="empId" />
+        <result column="start_date" property="startDate" />
+        <result column="end_date" property="endDate" />
+        <result column="train_unit" property="trainUnit" />
+        <result column="train_content" property="trainContent" />
+        <result column="train_certificate" property="trainCertificate" />
+        <result column="memo" property="memo" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, emp_id AS empId, start_date AS startDate, end_date AS endDate, train_unit AS trainUnit, train_content AS trainContent, train_certificate AS trainCertificate, memo
+    </sql>
+
+</mapper>

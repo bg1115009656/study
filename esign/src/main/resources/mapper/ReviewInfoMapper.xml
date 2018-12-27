@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dianmi.esign.dao.ReviewInfoMapper">
+  <resultMap id="BaseResultMap" type="com.dianmi.esign.model.ReviewInfo">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="REVIEW_UUID" jdbcType="VARCHAR" property="reviewUuid" />
+    <result column="REVIEW_ID" jdbcType="INTEGER" property="reviewId" />
+    <result column="APPLY_ENT_UUID" jdbcType="VARCHAR" property="applyEntUuid" />
+    <result column="UNION_ID" jdbcType="VARCHAR" property="unionId" />
+    <result column="STAFF_NAME" jdbcType="VARCHAR" property="staffName" />
+    <result column="STAFF_PLACE" jdbcType="VARCHAR" property="staffPlace" />
+    <result column="PHONE_NUMBER" jdbcType="VARCHAR" property="phoneNumber" />
+    <result column="APPLY_JOB" jdbcType="VARCHAR" property="applyJob" />
+    <result column="REVIEW_STATUS" jdbcType="VARCHAR" property="reviewStatus" />
+    <result column="STATUS" jdbcType="VARCHAR" property="status" />
+    <result column="UPDATE_USER" jdbcType="VARCHAR" property="updateUser" />
+    <result column="UPDATE_TIME" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="CREATE_USER" jdbcType="VARCHAR" property="createUser" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+  </resultMap>
+</mapper>

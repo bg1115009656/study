@@ -5,7 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/mappertest/mappertest.iml" filepath="$PROJECT_DIR$/mappertest/mappertest.iml" />
       <module fileurl="file://$PROJECT_DIR$/mulidatasource/mulidatasource.iml" filepath="$PROJECT_DIR$/mulidatasource/mulidatasource.iml" />
       <module fileurl="file://$PROJECT_DIR$/mulimybatisplus/mulimybatisplus.iml" filepath="$PROJECT_DIR$/mulimybatisplus/mulimybatisplus.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mybatisplus/mybatisplustest.iml" filepath="$PROJECT_DIR$/mybatisplus/mybatisplustest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatisplus/mybatisplus.iml" filepath="$PROJECT_DIR$/mybatisplus/mybatisplus.iml" />
       <module fileurl="file://$PROJECT_DIR$/oauthtest/oauthtest.iml" filepath="$PROJECT_DIR$/oauthtest/oauthtest.iml" />
       <module fileurl="file://$PROJECT_DIR$/security/security.iml" filepath="$PROJECT_DIR$/security/security.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/study.iml" filepath="$PROJECT_DIR$/.idea/study.iml" />

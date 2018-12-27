@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dianmi.esign.dao.TemplateFieldsMapper">
+  <resultMap id="BaseResultMap" type="com.dianmi.esign.model.TemplateFields">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="FIELD_ID" jdbcType="INTEGER" property="fieldId" />
+    <result column="FIELD_NAME" jdbcType="VARCHAR" property="fieldName" />
+    <result column="FIELD_TO_TPL" jdbcType="VARCHAR" property="fieldToTpl" />
+    <result column="FILL_TYPE" jdbcType="VARCHAR" property="fillType" />
+    <result column="FIELD_SOURCE" jdbcType="VARCHAR" property="fieldSource" />
+    <result column="FIELD_PROPER" jdbcType="VARCHAR" property="fieldProper" />
+    <result column="TEMPLATE_ID" jdbcType="VARCHAR" property="templateId" />
+    <result column="STATUS" jdbcType="VARCHAR" property="status" />
+    <result column="UPDATE_USER" jdbcType="VARCHAR" property="updateUser" />
+    <result column="UPDATE_TIME" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="CREATE_USER" jdbcType="VARCHAR" property="createUser" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+  </resultMap>
+</mapper>

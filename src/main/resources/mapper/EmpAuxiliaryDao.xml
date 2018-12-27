@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dianmi.cbas.dao.EmpAuxiliaryDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.dianmi.cbas.entity.EmpAuxiliary">
+        <id column="id" property="id" />
+        <result column="emp_id" property="empId" />
+        <result column="archive_no" property="archiveNo" />
+        <result column="cabinet_no" property="cabinetNo" />
+        <result column="file_type" property="fileType" />
+        <result column="archive_city" property="archiveCity" />
+        <result column="archive_start" property="archiveStart" />
+        <result column="archive_end" property="archiveEnd" />
+        <result column="archive_contact" property="archiveContact" />
+        <result column="archive_mobile" property="archiveMobile" />
+        <result column="archive_address" property="archiveAddress" />
+        <result column="archive_org_id" property="archiveOrgId" />
+        <result column="archive_orgname" property="archiveOrgname" />
+        <result column="org_name" property="orgName" />
+        <result column="si_whether_payment" property="siWhetherPayment" />
+        <result column="si_anticipated_month" property="siAnticipatedMonth" />
+        <result column="si_company_id" property="siCompanyId" />
+        <result column="si_company" property="siCompany" />
+        <result column="si_welfareset_id" property="siWelfaresetId" />
+        <result column="si_welfareset_name" property="siWelfaresetName" />
+        <result column="si_city_id" property="siCityId" />
+        <result column="si_city_name" property="siCityName" />
+        <result column="si_start_month" property="siStartMonth" />
+        <result column="si_per_account" property="siPerAccount" />
+        <result column="per_medicare_card" property="perMedicareCard" />
+        <result column="hpf_whether_payment" property="hpfWhetherPayment" />
+        <result column="hpf_anticipated_month" property="hpfAnticipatedMonth" />
+        <result column="hpf_city_id" property="hpfCityId" />
+        <result column="hpf_city_name" property="hpfCityName" />
+        <result column="hpf_company_id" property="hpfCompanyId" />
+        <result column="hpf_company" property="hpfCompany" />
+        <result column="hpf_welfareset_id" property="hpfWelfaresetId" />
+        <result column="hpf_welfareset_name" property="hpfWelfaresetName" />
+        <result column="hpf_start_month" property="hpfStartMonth" />
+        <result column="hpf_per_account" property="hpfPerAccount" />
+        <result column="salary_company_id" property="salaryCompanyId" />
+        <result column="salary_company" property="salaryCompany" />
+        <result column="busigness_city_id" property="busignessCityId" />
+        <result column="busigness_city_name" property="busignessCityName" />
+        <result column="program_id" property="programId" />
+        <result column="program_name" property="programName" />
+        <result column="business_company_id" property="businessCompanyId" />
+        <result column="business_company" property="businessCompany" />
+        <result column="business_start_month" property="businessStartMonth" />
+        <result column="package_proce" property="packageProce" />
+        <result column="health_status" property="healthStatus" />
+        <result column="occupational_name" property="occupationalName" />
+        <result column="beneficiary" property="beneficiary" />
+        <result column="beneficiary_relationship" property="beneficiaryRelationship" />
+        <result column="status" property="status" />
+        <result column="update_user" property="updateUser" />
+        <result column="update_time" property="updateTime" />
+        <result column="create_user" property="createUser" />
+        <result column="create_time" property="createTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, emp_id AS empId, archive_no AS archiveNo, cabinet_no AS cabinetNo, file_type AS fileType, archive_city AS archiveCity, archive_start AS archiveStart, archive_end AS archiveEnd, archive_contact AS archiveContact, archive_mobile AS archiveMobile, archive_address AS archiveAddress, archive_org_id AS archiveOrgId, archive_orgname AS archiveOrgname, org_name AS orgName, si_whether_payment AS siWhetherPayment, si_anticipated_month AS siAnticipatedMonth, si_company_id AS siCompanyId, si_company AS siCompany, si_welfareset_id AS siWelfaresetId, si_welfareset_name AS siWelfaresetName, si_city_id AS siCityId, si_city_name AS siCityName, si_start_month AS siStartMonth, si_per_account AS siPerAccount, per_medicare_card AS perMedicareCard, hpf_whether_payment AS hpfWhetherPayment, hpf_anticipated_month AS hpfAnticipatedMonth, hpf_city_id AS hpfCityId, hpf_city_name AS hpfCityName, hpf_company_id AS hpfCompanyId, hpf_company AS hpfCompany, hpf_welfareset_id AS hpfWelfaresetId, hpf_welfareset_name AS hpfWelfaresetName, hpf_start_month AS hpfStartMonth, hpf_per_account AS hpfPerAccount, salary_company_id AS salaryCompanyId, salary_company AS salaryCompany, busigness_city_id AS busignessCityId, busigness_city_name AS busignessCityName, program_id AS programId, program_name AS programName, business_company_id AS businessCompanyId, business_company AS businessCompany, business_start_month AS businessStartMonth, package_proce AS packageProce, health_status AS healthStatus, occupational_name AS occupationalName, beneficiary, beneficiary_relationship AS beneficiaryRelationship, status, update_user AS updateUser, update_time AS updateTime, create_user AS createUser, create_time AS createTime
+    </sql>
+
+</mapper>

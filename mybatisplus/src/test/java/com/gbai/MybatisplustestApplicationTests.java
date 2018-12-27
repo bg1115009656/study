@@ -37,11 +37,14 @@ public class MybatisplustestApplicationTests {
 ////        ew.having("username='李四'");
 //        ew.in("username","李四");
 //        Condition ew = new Condition();
-        ew.in("username","李四").and("password='1'").andNew("password is null").and("id=1");
+//        ew.in("username","李四").and("password='1'").andNew("password is null").and("id=1");
 //        Integer integer = userMapper.selectCount(ew);
+        ew.where("username={0}","李四");
         List<Map<String, Object>> users = userMapper.selectMaps(ew);
         System.out.println(ew.getSqlSegment());
         System.out.println(users.toString());
     }
+
+
 
 }

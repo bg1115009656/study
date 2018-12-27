@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dianmi.cbas.dao.EmpDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.dianmi.cbas.entity.Emp">
+        <id column="id" property="id" />
+        <result column="customer_id" property="customerId" />
+        <result column="customer_name" property="customerName" />
+        <result column="service_city_name" property="serviceCityName" />
+        <result column="cost_center" property="costCenter" />
+        <result column="emp_name" property="empName" />
+        <result column="card_type" property="cardType" />
+        <result column="card_no" property="cardNo" />
+        <result column="birthday" property="birthday" />
+        <result column="gender" property="gender" />
+        <result column="age" property="age" />
+        <result column="rst_property" property="rstProperty" />
+        <result column="duty_status" property="dutyStatus" />
+        <result column="department_id" property="departmentId" />
+        <result column="emp_type" property="empType" />
+        <result column="post_code" property="postCode" />
+        <result column="post" property="post" />
+        <result column="used_name" property="usedName" />
+        <result column="nationality" property="nationality" />
+        <result column="native_place" property="nativePlace" />
+        <result column="nation" property="nation" />
+        <result column="contact_mobile" property="contactMobile" />
+        <result column="contact_tel" property="contactTel" />
+        <result column="email" property="email" />
+        <result column="rst_city" property="rstCity" />
+        <result column="rst_address" property="rstAddress" />
+        <result column="live_address" property="liveAddress" />
+        <result column="graduated_school" property="graduatedSchool" />
+        <result column="profession" property="profession" />
+        <result column="marital_status" property="maritalStatus" />
+        <result column="political_status" property="politicalStatus" />
+        <result column="interview_date" property="interviewDate" />
+        <result column="entry_date" property="entryDate" />
+        <result column="leave_date" property="leaveDate" />
+        <result column="leave_reason" property="leaveReason" />
+        <result column="supplier_id" property="supplierId" />
+        <result column="emp_memo" property="empMemo" />
+        <result column="duration_type" property="durationType" />
+        <result column="employment_type" property="employmentType" />
+        <result column="resource_type" property="resourceType" />
+        <result column="outsize_type" property="outsizeType" />
+        <result column="status" property="status" />
+        <result column="update_user" property="updateUser" />
+        <result column="update_time" property="updateTime" />
+        <result column="create_user" property="createUser" />
+        <result column="create_time" property="createTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, customer_id AS customerId, customer_name AS customerName, service_city_name AS serviceCityName, cost_center AS costCenter, emp_name AS empName, card_type AS cardType, card_no AS cardNo, birthday, gender, age, rst_property AS rstProperty, duty_status AS dutyStatus, department_id AS departmentId, emp_type AS empType, post_code AS postCode, post, used_name AS usedName, nationality, native_place AS nativePlace, nation, contact_mobile AS contactMobile, contact_tel AS contactTel, email, rst_city AS rstCity, rst_address AS rstAddress, live_address AS liveAddress, graduated_school AS graduatedSchool, profession, marital_status AS maritalStatus, political_status AS politicalStatus, interview_date AS interviewDate, entry_date AS entryDate, leave_date AS leaveDate, leave_reason AS leaveReason, supplier_id AS supplierId, emp_memo AS empMemo, duration_type AS durationType, employment_type AS employmentType, resource_type AS resourceType, outsize_type AS outsizeType, status, update_user AS updateUser, update_time AS updateTime, create_user AS createUser, create_time AS createTime
+    </sql>
+
+</mapper>
