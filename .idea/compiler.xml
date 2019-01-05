@@ -6,21 +6,25 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="esign" />
         <module name="mappertest" />
         <module name="mulidatasource" />
         <module name="mulimybatisplus" />
         <module name="mybatisplus" />
         <module name="oauthtest" />
+        <module name="quartz" />
         <module name="security" />
         <module name="test" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="esign" target="1.8" />
       <module name="mappertest" target="1.8" />
       <module name="mulidatasource" target="8" />
       <module name="mulimybatisplus" target="1.8" />
       <module name="mybatisplus" target="1.8" />
       <module name="oauthtest" target="1.8" />
+      <module name="quartz" target="1.8" />
       <module name="security" target="1.8" />
       <module name="test" target="8" />
     </bytecodeTargetLevel>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dianmi.esign.dao.TaxDeductProtocolMapper">
+  <resultMap id="BaseResultMap" type="com.dianmi.esign.model.TaxDeductProtocol">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="emp_id" jdbcType="BIGINT" property="empId" />
+    <result column="deduct_year" jdbcType="VARCHAR" property="deductYear" />
+    <result column="taxpayer_name" jdbcType="VARCHAR" property="taxpayerName" />
+    <result column="taxpayer_cert_type" jdbcType="VARCHAR" property="taxpayerCertType" />
+    <result column="taxpayer_cert_code" jdbcType="VARCHAR" property="taxpayerCertCode" />
+    <result column="taxpayer_number" jdbcType="VARCHAR" property="taxpayerNumber" />
+    <result column="taxpayer_address" jdbcType="VARCHAR" property="taxpayerAddress" />
+    <result column="taxpayer_email" jdbcType="VARCHAR" property="taxpayerEmail" />
+    <result column="wh_agent_name" jdbcType="VARCHAR" property="whAgentName" />
+    <result column="wh_agent_number" jdbcType="VARCHAR" property="whAgentNumber" />
+    <result column="month_income" jdbcType="DECIMAL" property="monthIncome" />
+    <result column="total_income" jdbcType="DECIMAL" property="totalIncome" />
+    <result column="month_deduct_amount" jdbcType="DECIMAL" property="monthDeductAmount" />
+    <result column="total_deduct_amount" jdbcType="DECIMAL" property="totalDeductAmount" />
+    <result column="special_month_deduct" jdbcType="DECIMAL" property="specialMonthDeduct" />
+    <result column="special_total_deduct" jdbcType="DECIMAL" property="specialTotalDeduct" />
+    <result column="child_start_month" jdbcType="INTEGER" property="childStartMonth" />
+    <result column="child_end_month" jdbcType="INTEGER" property="childEndMonth" />
+    <result column="month_child_edu" jdbcType="DECIMAL" property="monthChildEdu" />
+    <result column="total_child_edu" jdbcType="DECIMAL" property="totalChildEdu" />
+    <result column="old_start_month" jdbcType="INTEGER" property="oldStartMonth" />
+    <result column="old_end_month" jdbcType="INTEGER" property="oldEndMonth" />
+    <result column="month_support_old" jdbcType="DECIMAL" property="monthSupportOld" />
+    <result column="total_support_old" jdbcType="DECIMAL" property="totalSupportOld" />
+    <result column="loans_start_month" jdbcType="INTEGER" property="loansStartMonth" />
+    <result column="loans_end_month" jdbcType="INTEGER" property="loansEndMonth" />
+    <result column="month_house_loans" jdbcType="DECIMAL" property="monthHouseLoans" />
+    <result column="total_house_loans" jdbcType="DECIMAL" property="totalHouseLoans" />
+    <result column="rent_start_month" jdbcType="INTEGER" property="rentStartMonth" />
+    <result column="rent_end_month" jdbcType="INTEGER" property="rentEndMonth" />
+    <result column="month_house_rent" jdbcType="DECIMAL" property="monthHouseRent" />
+    <result column="total_house_rent" jdbcType="DECIMAL" property="totalHouseRent" />
+    <result column="continue_start_month" jdbcType="INTEGER" property="continueStartMonth" />
+    <result column="continue_end_month" jdbcType="INTEGER" property="continueEndMonth" />
+    <result column="month_continue_edu" jdbcType="DECIMAL" property="monthContinueEdu" />
+    <result column="total_continue_edu" jdbcType="DECIMAL" property="totalContinueEdu" />
+    <result column="eligibility_start_month" jdbcType="INTEGER" property="eligibilityStartMonth" />
+    <result column="eligibility_end_month" jdbcType="INTEGER" property="eligibilityEndMonth" />
+    <result column="month_eligibility_edu" jdbcType="DECIMAL" property="monthEligibilityEdu" />
+    <result column="total_eligibility_edu" jdbcType="DECIMAL" property="totalEligibilityEdu" />
+    <result column="month_other_deduct" jdbcType="DECIMAL" property="monthOtherDeduct" />
+    <result column="total_other_deduct" jdbcType="DECIMAL" property="totalOtherDeduct" />
+    <result column="month_tax" jdbcType="DECIMAL" property="monthTax" />
+    <result column="total_tax" jdbcType="DECIMAL" property="totalTax" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+  </resultMap>
+</mapper>

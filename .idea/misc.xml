@@ -13,6 +13,8 @@
         <option value="$PROJECT_DIR$/test/pom.xml" />
         <option value="$PROJECT_DIR$/muliDataSource/pom.xml" />
         <option value="$PROJECT_DIR$/mulimybatisplus/pom.xml" />
+        <option value="$PROJECT_DIR$/esign/pom.xml" />
+        <option value="$PROJECT_DIR$/quartz/pom.xml" />
       </list>
     </option>
   </component>

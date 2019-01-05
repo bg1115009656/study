@@ -19,16 +19,16 @@ import static com.dianmi.esign.core.ProjectConstant.*;
  */
 public class CodeGenerator {
     //JDBC配置，请修改为你项目的实际配置
-    private static final String JDBC_URL = "jdbc:mysql://localhost:3306/esign";
+    private static final String JDBC_URL = "jdbc:mysql://106.75.222.98:3306/dev_ibpo?characterEncoding=utf8&useSSL=false&allowMultiQueries=true";
     private static final String JDBC_USERNAME = "root";
-    private static final String JDBC_PASSWORD = "root";
+    private static final String JDBC_PASSWORD = "root123@";
     private static final String JDBC_DIVER_CLASS_NAME = "com.mysql.jdbc.Driver";
 
     private static final String PROJECT_PATH = System.getProperty("user.dir");//项目在硬盘上的基础路径
-    private static final String TEMPLATE_FILE_PATH = PROJECT_PATH + "/src/test/resources/generator/template";//模板位置
+    private static final String TEMPLATE_FILE_PATH = PROJECT_PATH + "/esign/src/test/resources/generator/template";//模板位置
 
-    private static final String JAVA_PATH = "/src/main/java"; //java文件路径
-    private static final String RESOURCES_PATH = "/src/main/resources";//资源文件路径
+    private static final String JAVA_PATH = "/esign/src/main/java"; //java文件路径
+    private static final String RESOURCES_PATH = "/esign/src/main/resources";//资源文件路径
 
     private static final String PACKAGE_PATH_SERVICE = packageConvertPath(SERVICE_PACKAGE);//生成的Service存放路径
     private static final String PACKAGE_PATH_SERVICE_IMPL = packageConvertPath(SERVICE_IMPL_PACKAGE);//生成的Service实现存放路径
@@ -39,7 +39,7 @@ public class CodeGenerator {
 
     public static void main(String[] args) {
     //    genCode("opt_log","ROLE_INFO","TEMPLATE_INFO","TEMPLATE_FIELDS","CONTRACT_INFO","SIGN_ENT_INFO","REVIEW_INFO","SIGN_ACCOUNT_INFO","SIGN_CONFIG");
-        genCode("ENTERPRISE_POSITION");
+        genCode("tax_deduct_protocol");
 
 //        genCodeByCustomModelName("user","User");
     }
