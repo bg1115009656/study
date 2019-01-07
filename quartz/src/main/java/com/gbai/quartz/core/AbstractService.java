@@ -42,7 +42,7 @@ public abstract class AbstractService<T> implements Service<T> {
         mapper.updateList(models);
     }
 
-    public T findById(Integer id) {
+    public T findById(Object id) {
         return mapper.selectByPrimaryKey(id);
     }
     public T findById(String id) {

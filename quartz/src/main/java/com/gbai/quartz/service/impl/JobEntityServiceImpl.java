@@ -24,7 +24,7 @@ public class JobEntityServiceImpl extends AbstractService<JobEntity> implements 
     private JobEntityMapper jobEntityMapper;
 
 //     注入任务调度器
-    @Autowired
+    @Resource
     private Scheduler scheduler;
 
     //    测试quartz 框架 定时任务

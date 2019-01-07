@@ -81,7 +81,7 @@ public class QuartzNewConfig {
      * @throws Exception
      */
     @Bean(destroyMethod = "destroy",autowire = Autowire.NO)
-    public SchedulerFactoryBean schedulerFactoryBean(JobFactory jobFactory, DataSource dataSource) throws Exception
+    public SchedulerFactoryBean scheduler(JobFactory jobFactory, DataSource dataSource) throws Exception
     {
         SchedulerFactoryBean schedulerFactoryBean = new SchedulerFactoryBean();
         //将spring管理job自定义工厂交由调度器维护

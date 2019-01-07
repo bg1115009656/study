@@ -21,7 +21,7 @@ public interface Service<T> {
 
     void updateList(List<T> models);//通过主键批量更新
 
-    T findById(Integer id);//通过ID查找
+    T findById(Object id);//通过ID查找
 
     T findById(String id);//通过ID查找
 

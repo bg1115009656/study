@@ -19,6 +19,8 @@ public class JobEntity {
 
     private String name;
 
+    private String methodName;
+
     private String groups;
 
     private String cron;

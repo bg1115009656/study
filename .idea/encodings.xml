@@ -8,6 +8,8 @@
     <file url="file://$PROJECT_DIR$/mybatisplus" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/oauthtest" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/quartz" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/quartz/src/main/java/com/gbai/quartz/model/ScheduleJob.sql" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/quartz/src/main/java/com/gbai/quartz/model/ScheduleJobLog.sql" charset="GBK" />
     <file url="file://$PROJECT_DIR$/security" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/test" charset="UTF-8" />
   </component>

@@ -7,6 +7,7 @@
     -->
     <id column="id" jdbcType="INTEGER" property="id" />
     <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="method_name" jdbcType="VARCHAR" property="methodName" />
     <result column="groups" jdbcType="VARCHAR" property="groups" />
     <result column="cron" jdbcType="VARCHAR" property="cron" />
     <result column="parameter" jdbcType="VARCHAR" property="parameter" />
