@@ -20,8 +20,8 @@ public class ScheduleJobController {
 
     @PostMapping("/addJob")
     public Result saveJob(@RequestBody ScheduleJob scheduleJob) {
-        scheduleJobService.saveJob(scheduleJob);
-        return ResultGenerator.genSuccessResult();
+        Long aLong = scheduleJobService.saveJob(scheduleJob);
+        return ResultGenerator.genSuccessResult(aLong);
     }
     @GetMapping("/resumeJob")
     public Result resumeJob(@RequestParam Long jobId) {
@@ -40,8 +40,8 @@ public class ScheduleJobController {
         scheduleJobService.updateJob(scheduleJob);
         return ResultGenerator.genSuccessResult();
     }
-    @DeleteMapping("/deleteJob")
-    public Result deleteJob(@RequestParam Long jobId) {
+    @DeleteMapping("/deleteJob/{jobId}")
+    public Result deleteJob(@PathVariable("jobId") Long jobId) {
         scheduleJobService.deleteJob(jobId);
         return ResultGenerator.genSuccessResult();
     }

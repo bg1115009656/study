@@ -1,7 +1,6 @@
 package com.gbai.quartz.util;
 
 import com.gbai.quartz.core.BaseException;
-import com.gbai.quartz.model.JobEntity;
 import com.gbai.quartz.model.ScheduleJob;
 import com.gbai.quartz.task.QuartzJob;
 import org.quartz.*;

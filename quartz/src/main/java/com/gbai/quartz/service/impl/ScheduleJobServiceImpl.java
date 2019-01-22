@@ -54,7 +54,6 @@ public class ScheduleJobServiceImpl extends AbstractService<ScheduleJob> impleme
     @Override
     public void updateJob(ScheduleJob scheduleJob) {
         SchedulerUtils.updateJob(scheduler,scheduleJob);
-        scheduleJobMapper.deleteByPrimaryKey(scheduleJob.getId());
 
         scheduleJobMapper.updateByPrimaryKey(scheduleJob);
     }
@@ -62,6 +61,7 @@ public class ScheduleJobServiceImpl extends AbstractService<ScheduleJob> impleme
     @Override
     public void deleteJob(Long jobId) {
         SchedulerUtils.deleteJob(scheduler,jobId);
+        scheduleJobMapper.deleteByPrimaryKey(jobId);
     }
 
 }
