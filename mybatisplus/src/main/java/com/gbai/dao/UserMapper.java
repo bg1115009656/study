@@ -34,4 +34,6 @@ public interface UserMapper extends BaseMapper<User> {
     int deleteAll();
 
     List<Map<String,Object>> getAllUser();
+
+
 }

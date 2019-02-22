@@ -26,7 +26,7 @@ public class MulimybatisplusApplicationTests {
 
     @Test
     public void contextLoads() {
-        List<User> users = userMapper.selectList(null);
+        List<Map<String, Object>> users = userMapper.getAllUser();
         List<Book> books = bookMapper.selectList(null);
         System.out.println(users.toString());
         System.out.println(books.toString());
