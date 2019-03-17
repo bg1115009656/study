@@ -1,7 +1,7 @@
 package com.gbai;
 
-import com.gbai.mapper.UserMapper;
-import com.gbai.modle.User;
+import com.gbai.mapper.UsernameMapper;
+import com.gbai.modle.Username;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,21 +15,21 @@ import java.util.List;
 public class TestApplicationTests {
 
     @Autowired
-    UserMapper userMapper;
+    UsernameMapper usernameMapper;
 
     @Test
     public void contextLoads() {
 
-        List<User> users = userMapper.selectAllUser();
-        System.out.println(users.toString());
+        List<Username> usernames = usernameMapper.selectAllUser();
+        System.out.println(usernames.toString());
     }
 
     @Test
     public void test() {
-        User user = new User();
-        user.setUsername("gbai");
-        user.setPassword("123456");
-        int flag = userMapper.insert(user);
+        Username username = new Username();
+        username.setUsername("gbai");
+        username.setPassword("123456");
+        int flag = usernameMapper.insert(username);
         System.out.println(flag);
     }
 

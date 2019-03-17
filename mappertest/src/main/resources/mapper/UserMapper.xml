@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.gbai.mapper.UserMapper">
+<resultMap id="uMap" type="com.gbai.bean.User">
+		<id column="id" property="id" />
+		<result column="name" property="name" />
+        <result column="nickname" property="nickname" />
+	</resultMap>
+
+	<select id="selectAllList" resultMap="uMap">
+		select * from user;
+	</select>
+
+	<insert id="saveOrUpdate" >
+		insert into user
+		<trim prefix="(" suffix=")" suffixOverrides=",">
+			<if test="pojo.id != null" >id,</if>
+			<if test="pojo.name != null" >name,</if>
+			<if test="pojo.nickname != null" >nickname,</if>
+		</trim>
+		values
+		<trim prefix="(" suffix=")" suffixOverrides=",">
+			<if test="pojo.id != null" >#{pojo.id},</if>
+			<if test="pojo.name != null" >#{pojo.name},</if>
+			<if test="pojo.nickname != null" >#{pojo.nickname},</if>
+		</trim>
+		ON DUPLICATE KEY UPDATE
+		<trim suffixOverrides=",">
+			<if test="pojo.name != null" >name=#{pojo.name},</if>
+			<if test="pojo.nickname != null" >nickname=#{pojo.nickname},</if>
+		</trim>
+	</insert>
+</mapper>

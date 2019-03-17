@@ -12,6 +12,8 @@
       <module fileurl="file://$PROJECT_DIR$/security/security.iml" filepath="$PROJECT_DIR$/security/security.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/study.iml" filepath="$PROJECT_DIR$/.idea/study.iml" />
       <module fileurl="file://$PROJECT_DIR$/test/test.iml" filepath="$PROJECT_DIR$/test/test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/muliDataSource/test (1).iml" filepath="$PROJECT_DIR$/muliDataSource/test (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/test/test (2).iml" filepath="$PROJECT_DIR$/test/test (2).iml" />
     </modules>
   </component>
 </project>

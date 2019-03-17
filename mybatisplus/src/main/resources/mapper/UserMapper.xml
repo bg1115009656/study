@@ -15,7 +15,7 @@
     </sql>
 
     <select id="getAllUser" resultType="map">
-        select * from user u left join role r on u.username=r.name;
+        select * from username u left join role r on u.username=r.name;
     </select>
 
 </mapper>

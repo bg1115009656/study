@@ -9,7 +9,7 @@ import java.util.Date;
  * 实体类
  * 
  */
-public class User {
+public class Username {
 	private int id;
 	private String username;
 	private String password;
@@ -31,10 +31,10 @@ public class User {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	public User() {
+	public Username() {
 		super();
 	}
-	public User(int id, String username, String password, Date date) {
+	public Username(int id, String username, String password, Date date) {
 		super();
 		this.id = id;
 		this.username = username;
@@ -42,7 +42,7 @@ public class User {
 	}
 	@Override
 	public String toString() {
-		return "User [id=" + id + ", username=" + username + ", password="
+		return "Username [id=" + id + ", username=" + username + ", password="
 				+ password + "]";
 	}
 }

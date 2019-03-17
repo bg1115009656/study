@@ -2,12 +2,14 @@ package com.gbai;
 
 import com.gbai.bean.User;
 import com.gbai.mapper.UserMapper;
+import com.github.pagehelper.Page;
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
-import tk.mybatis.mapper.entity.Example;
 
 import java.util.List;
 
@@ -21,23 +23,26 @@ public class MappertestApplicationTests {
     public void contextLoads() {
 
         User user = userMapper.selectByPrimaryKey(2);
-        List<User> users = userMapper.selectAll();
-        System.out.println(users.toString());
+        PageHelper.startPage(1,15);
+        List<User> users = userMapper.selectAllList();
+        PageInfo<User> pageInfo = new PageInfo(users);
+        System.out.println(pageInfo.getList().toString());
 
     }
 
     @Test
     public void insertTest() {
         User user = new User();
-        user.setId(3);
+//        user.setId(5L);
         user.setName("yang");
-        int insert = userMapper.insert(user);
+        user.setNickname("lover");
+        int insert = userMapper.saveOrUpdate(user);
         System.out.println(insert);
     }
     @Test
     public void updateTest() {
         User user = new User();
-        user.setId(2);
+        user.setId(2L);
         user.setName("yangcaocao");
         int i = userMapper.updateByPrimaryKey(user);
         System.out.println(i);
@@ -45,7 +50,7 @@ public class MappertestApplicationTests {
     @Test
     public void deleteTest(){
         User user = new User();
-        user.setId(3);
+        user.setId(3L);
         userMapper.delete(user);
     }
 

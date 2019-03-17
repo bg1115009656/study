@@ -15,7 +15,7 @@
     </sql>
 
     <select id="getAllUser" resultType="map">
-        select * from user;
+        select * from username;
     </select>
 
 </mapper>
